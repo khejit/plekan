@@ -32,8 +32,8 @@ const plekanOptions = {
     onDuplicate: () => {},
     onUpdate: () => {},
     onInit: () => {},
-    /** Bu kısım  comment out olmalı ki onFileUpload özelliğine göre yükleme yapıyor*/
-    // onFileUpload : () => {},
+    /** Bu kısım  comment out olmalı ki onFileUpload özelliğine göre yükleme yapıyor */
+    onFileUpload: () => {},
   },
 };
 

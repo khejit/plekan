@@ -50,9 +50,12 @@ export default {
     */
     this._languages.map((l) => {
       try {
+        console.log(this.me.contents[l].html);
         const html = this.me.contents[l].html;
         this.me.contents[l].html = html || this.DEFAULT_CONTENT;
       } catch (e) {
+        console.log(e);
+
         const tmp = JSON.parse(JSON.stringify(this.me));
 
         tmp.contents[l] = {};

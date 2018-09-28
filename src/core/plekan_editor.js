@@ -59,6 +59,8 @@ store.state.editorStart = () => {
     top = gb.top;
     width = gb.width;
 
+      console.log(gb.width);
+
     if (store.state.editorElementDynamic.className.indexOf('active') === -1) {
       store.state.editorElementDynamic.style.left =
         `${left + width / 2 - tw / 2}px`;

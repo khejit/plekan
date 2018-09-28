@@ -10,8 +10,8 @@ import { plekan } from './index';
 Vue.config.productionTip = false;
 
 Vue.use(plekan, {
-  defaultLanguage: 'tr',
-  languages: ['tr', 'en'],
+  defaultLanguage: 'en',
+  languages: ['en'],
   modules,
   thumbnailPath: '/static/thumbnails/',
   plekan_buttons: {

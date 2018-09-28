@@ -138,10 +138,10 @@ export default {
           // eslint-disable-next-line
           case 'custom':
             const customButton = this.$customEditorButtons[
-              e.target.dataset.index
+              item.target.dataset.index
             ];
             customButton.callback({
-              target: e.target,
+              target: item.target,
               execCommand: exec,
               selection: this.store.state.selo,
               savedSelection: this.store.state.sel,
@@ -154,7 +154,7 @@ export default {
             this.toggleFileUploadModal();
             break;
           case 'formatBlock':
-            exec('formatBlock', e.target.dataset.value);
+            exec('formatBlock', item.target.dataset.value);
             break;
           default:
             exec(cmd);
